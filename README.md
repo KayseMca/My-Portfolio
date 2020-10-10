@@ -1,4 +1,4 @@
 # KayseMca.github.io
-My Data Science Portfolio
+My full stack developer Portfolio
 
 under desinging ....
