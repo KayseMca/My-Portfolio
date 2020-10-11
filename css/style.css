@@ -1,0 +1,69 @@
+
+@import url(./fonts.css);
+
+/* css variables */
+@import url(../partials/_variables.css);
+
+/* start navigation */
+.header_area.main-menu.navbar.navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+.header_area .main-menu .navbar{
+    padding: 1rem 18rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font:normal 500 15px/2px var(--roboto); /* 2px is lign height*/
+    text-transform: uppercase;
+    color:var(--title-color);
+    padding: 1.7rem;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gridient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main-menu .navbar-nav  a:hover{
+    background: var(--gridient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* end navigation */
+
+/* Banner Area start */
+.site-main .site-banner{
+    background: url(../img/site-main-background2.jpg) no-repeat 0% 50%;
+    background-size:cover;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content:'';
+    height: 2px;
+    width: 10vw;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+    background-color: black;
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image>img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+/* Banner area end */
