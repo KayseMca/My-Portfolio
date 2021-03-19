@@ -20,16 +20,19 @@
 }
 
 .header_area .main-menu .navbar-nav .active a{
-    background: var(--gridient-color);
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 .header_area .main-menu .navbar-nav  a:hover{
-    background: var(--gridient-color);
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+img{
+    border-radius: 15%;
 }
 /* end navigation */
 
@@ -47,23 +50,80 @@
 .site-main .site-banner .site-title h3::after{
     content:'';
     height: 2px;
-    width: 10vw;
+    width: 18vw;
     display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
+    margin-left: 4%;
+    transform: translateY(-5px);
     background-color: black;
 }
 
 .site-main .site-banner .site-title h1{
-    font-size: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .site-main .site-banner .site-title h4{
     font-size: 1.5rem;
+    margin-left: 4%;
 }
 
 .site-main .site-banner .banner-image>img{
     padding: 7rem 0;
     width: 90rem;
 }
+
+.title-text{
+    font: normal bold 50px/72px var(--roboto);
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.button{
+    padding: .8rem 2.2rem;
+    font:normal 500 16px/20px var(--roboto);
+    position: relative;
+    border-radius: 8px;
+    /* border: 3px solid transparent; */
+}
+
+.button.primary-button{
+    background:var(--gradient-color);
+    background-clip: padding-box;
+    color:whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color:black;
+}
+
+.button.primary-button::after, .button.secondary-button::after{
+    
+    position: absolute;
+    top: -2px; left:-2px;
+    bottom:-2px;right:-2px;
+    content:'';
+    z-index:-1;
+    border-radius: 4px;
+    background:var(--gradient-color);
+}
+
+.button.secondary-button{
+    background:white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+ 
+}
+.button.secondary-button:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color:white;
+    box-shadow: var(--box-shadow);
+}
+
+
+
 /* Banner area end */
